@@ -34,7 +34,7 @@
                                 </ul>
                             </li>
                         </ul>-->
-												<?php mb_menu('main_menu'); ?>
+					    <?php mb_menu('main_menu'); ?>
                     </div>
                 </div>
             </nav>
