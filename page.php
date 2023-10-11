@@ -59,7 +59,19 @@
 </header>
 <?php endif; ?>
 
-<?php the_content(); ?>
+<?php if ($post && preg_match( '/vc_/', $post->post_content )) : ?>
+	<div class="entry-content">
+		<?php the_content(); ?>
+	</div>
+<?php else : ?>
+	<section class="py-5">
+		<div class="container px-5 my-5">
+			<div class="entry-content">
+				<?php the_content(); ?>
+			</div>
+		</div>
+	</section>
+<?php endif; ?>
 
 <?php endwhile; ?>
 <?php endif; ?>

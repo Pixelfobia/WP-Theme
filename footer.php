@@ -10,7 +10,7 @@
                         <a class="link-light small" href="#!">Terms</a>
                         <span class="text-white mx-1">&middot;</span>
                         <a class="link-light small" href="#!">Contact</a>-->
-												<?php mb_menu('footer_m enu'); ?>
+					    <?php mb_menu('footer_menu'); ?>
                     </div>
                 </div>
             </div>
