@@ -8,8 +8,11 @@
  get_header();
 ?>
 
+<?php if ( have_posts()) : ?>
+<?php while ( have_posts()) : the_post(); ?>
+
+<!-- Header-->
 <?php if (pods_field_display('enable_headed_1') == 'Yes') : ?>
- <!-- Header-->
  <header class="bg-dark py-5">
 	<div class="container px-5">
 		<div class="row gx-5 align-items-center justify-content-center">
@@ -46,14 +49,19 @@
 		<div class="row justify-content-center">
 			<div class="col-lg-8 col-xxl-6">
 				<div class="text-center my-5">
-					<h1 class="fw-bolder mb-3"><?php echo pods_field_display('heading_2'); ?></h1>
-					<p class="lead fw-normal text-muted mb-4"><?php echo pods_field_display('subheading_2'); ?></p>
-					<a class="btn btn-primary btn-lg" href="<?php echo pods_field_display('button_url'); ?>"><?php echo pods_field_display('button_text'); ?></a>
+					<?php if (pods_field_display('heading_2')) : ?><h1 class="fw-bolder mb-3"><?php echo pods_field_display('heading_2'); ?></h1><?php endif; ?>
+					<?php if (pods_field_display('subheading_2')) : ?><p class="lead fw-normal text-muted mb-4"><?php echo pods_field_display('subheading_2'); ?></p><?php endif; ?>
+					<?php if (pods_field_display('button_text')) : ?><a class="btn btn-primary btn-lg" href="<?php echo pods_field_display('button_url'); ?>"><?php echo pods_field_display('button_text'); ?></a><?php endif; ?>
 				</div>
 			</div>
 		</div>
 	</div>
 </header>
+<?php endif; ?>
+
+<?php the_content(); ?>
+
+<?php endwhile; ?>
 <?php endif; ?>
 
 <?php

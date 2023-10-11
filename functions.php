@@ -109,7 +109,7 @@ function iid_nav_menu_classes($items, $menu, $args) {
 }
 
 // visual composer elements
-// require_once(dirname(__FILE__).'/inc/vc-elements.php');
+require_once(dirname(__FILE__).'/inc/vc-elements.php');
 
 // custom widgets
 // require_once(dirname(__FILE__).'/inc/widgets.php');
