@@ -62,7 +62,7 @@ function mb_about_section_2($atts, $content) {
 	$html .= '
 
 	<!-- About section two-->
-		<section class="py-5">
+		<section class="py-5" id="about-section-two">
 			<div class="container px-5 my-5">
 				<div class="row gx-5 align-items-center">
 					<div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="'.wp_get_attachment_url($mb_about_section_2_image).'" alt="..." /></div>
