@@ -9,7 +9,7 @@ function mb_vc_elements() {
     require_once(dirname(__FILE__).'/shortcodes/mb_contact_cards.php');
     require_once(dirname(__FILE__).'/shortcodes/mb_contact_form.php');
     require_once(dirname(__FILE__).'/shortcodes/mb_faq_section.php');
-    // require_once(dirname(__FILE__).'/shortcodes/mb_features_section.php');
+    require_once(dirname(__FILE__).'/shortcodes/mb_features_section.php');
     // require_once(dirname(__FILE__).'/shortcodes/mb_testimonial_section.php');
     // require_once(dirname(__FILE__).'/shortcodes/mb_cta_section.php');
     // require_once(dirname(__FILE__).'/shortcodes/mb_blog_section.php');
