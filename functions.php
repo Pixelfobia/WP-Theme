@@ -112,15 +112,15 @@ function iid_nav_menu_classes($items, $menu, $args) {
 require_once(dirname(__FILE__).'/inc/vc-elements.php');
 
 // custom widgets
-// require_once(dirname(__FILE__).'/inc/widgets.php');
+require_once(dirname(__FILE__).'/inc/widgets.php');
 
 // register sidebar
-// register_sidebar( array(
-// 	'name'          => __( 'Right Sidebar' ),
-// 	'id'            => 'right-sidebar',
-// 	'description'   => __( 'Right Sidebar.' ),
-// 	'before_widget' => '<div id="%1$s" class="text-center widget %2$s">',
-// 	'after_widget'  => '</div>',
-// 	'before_title'  => '<div class="h6 fw-bolder widget-title">',
-// 	'after_title'   => '</div>',
-// ) );
+register_sidebar( array(
+	'name'          => __( 'Right Sidebar' ),
+	'id'            => 'right-sidebar',
+	'description'   => __( 'Right Sidebar.' ),
+	'before_widget' => '<div id="%1$s" class="text-center widget %2$s">',
+	'after_widget'  => '</div>',
+	'before_title'  => '<div class="h6 fw-bolder widget-title">',
+	'after_title'   => '</div>',
+) );
