@@ -43,7 +43,7 @@ class mb_social_icons_widget extends WP_Widget {
 			<?php if ($linkedin): ?>
 				<a class="fs-5 px-2 link-dark" href="<?php echo $linkedin; ?>" target="_blank"><i class="bi-linkedin"></i></a>
 			<?php endif; ?>
-
+   
 			<?php if ($youtube): ?>
 				<a class="fs-5 px-2 link-dark" href="<?php echo $youtube; ?>" target="_blank"><i class="bi-youtube"></i></a>
 			<?php endif;
