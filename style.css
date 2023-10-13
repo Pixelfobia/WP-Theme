@@ -11,3 +11,6 @@ Text Domain: wptheme
 main {
 	overflow-x: hidden;
 }
+#submitButton {
+	width: 100%;
+}
