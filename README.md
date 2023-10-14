@@ -2,6 +2,7 @@
 
 ### The challenge
 * Creating a template from the sketch
+* Responsive mobile first
 * Wordpress, PHP, HTML, CSS, Bootstrap, CPT Pods
 
 ### Sections
